@@ -639,7 +639,7 @@ too = random.randint(0, 100)
 roi = f'<b> Случайное число: </b>'
 
 @app.on_message(filters.command("kviks", prefixes=".") & filters.me)
-async def mum(client, message):
+async def kviks(client, message):
 	global number
 	number = number + 1
 	vopross = ['гей?', 'безмамный?', 'майнкрафтер?', 'влад а4?', 'ебал собак?', 'крутой?', 'клоун?', 'негр?', 'ебал стики?', 'сочный арбуз?' 'АААААА В ЧАТ УПАЛА БОМБА АДОЛМЛПРВЖОАПВП']
@@ -648,6 +648,51 @@ async def mum(client, message):
 	await message.edit(str(text))
 	await asyncio.sleep(3.0)
 	text2 = random.choice(kviks)
+	await message.edit(str(text2))
+	await asyncio.sleep(5.0)
+	
+@app.on_message(filters.command("bombachat", prefixes+"." & filters.me)
+async def bombachat(client, message):
+	global number
+	number = number + 1
+	pryatka = ['Все участники выжили... Повезло, как будто всятой водой помылся 😎', 'Никто не выжил... Сегодня не наш день 😔', 'Все выжили кроме одного 😨. Как такое возможно?', 'Никто не выжил кроме одного... Он наверное обыграл русское казино']
+	text = f"АААААА В ЧАТ УПАЛА БОМБА 😱😱😱 У НАС ЕСТЬ 10 СЕКУНД ЧТОБЫ СПРЯТАТСЯ!!!"
+	await message.edit(str(text))
+	await asyncio.sleep(7.0)
+	text2 = "1..."
+	await message.edit(str(text2))
+	await asyncio.sleep(1.0)
+	text3 = "2..."
+	await message.edit(str(text3))
+	await asyncio.sleep(1.0)
+	text4 = "3..."
+	await message.edit(str(text4))
+	await asyncio.sleep(1.0)
+	text5 = "4..."
+	await message.edit(str(text5))
+	await asyncio.sleep(1.0)
+	text6 = "5..."
+	await message.edit(str(text6))
+	await asyncio.sleep(1.0)
+	text7 = "6..."
+	await message.edit(str(text7))
+	await asyncio.sleep(1.0)
+	text8 = "7..."
+	await message.edit(str(text8))
+	await asyncio.sleep(1.0)
+	text9 = "8..."
+	await message.edit(str(text9))
+	await asyncio.sleep(1.0)
+	text10 = "9..."
+	await message.edit(str(text10))
+	await asyncio.sleep(1.0)
+	text11 = "10!!!!"
+	await message.edit(str(text11))
+	await asyncio.sleep(1.0)
+	text12 = "БОМБА ВЗОРВАЛАСЬ 😨😨😱😱"
+	await message.edit(str(text12))
+	await asyncio.sleep(1.0)
+	text2 = random.choice(pryatka)
 	await message.edit(str(text2))
 	await asyncio.sleep(5.0)
 	
