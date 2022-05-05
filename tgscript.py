@@ -651,7 +651,7 @@ async def kviks(client, message):
 	await message.edit(str(text2))
 	await asyncio.sleep(5.0)
 	
-@app.on_message(filters.command("bombachat", prefixes+"." & filters.me)
+@app.on_message(filters.command("bombachat", prefixes=".") & filters.me)
 async def bombachat(client, message):
 	global number
 	number = number + 1
