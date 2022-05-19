@@ -4010,6 +4010,101 @@ def betaloves(_, msg):
 	sleep(5)
 	global number
 	number = number + 1
+	
+@app.on_message(filters.command("natural", prefixes=".") & filters.me)
+def betaloves(_, msg):
+	natural1 = 0
+
+	msg.edit(f'''
+	Превращяем тебя в натурала!''')
+	sleep(0.6)
+	while natural1 <= 100:
+		sleep(0.1)
+		gay1 += 1
+		msg.edit(f'''
+		{gay1}%''')
+	if natural1 >= 100:
+		msg.edit(f'''
+		Загрузка.''')
+		sleep(0.6)
+		msg.edit(f'''
+		Загрузка..''')
+		sleep(0.6)
+		msg.edit(f'''
+		Загрузка...''')
+		sleep(0.6)
+		msg.edit(f'''
+		Загрузка.''')
+		sleep(0.6)
+		msg.edit(f'''
+		Загрузка..''')
+		sleep(0.6)
+		msg.edit(f'''
+		Загрузка...''')
+		sleep(0.6)
+		msg.edit(f'''
+		Смена ориентации.''')
+		sleep(0.6)
+		msg.edit(f'''
+		Смена ориентации..''')
+		sleep(0.6)
+		msg.edit(f'''
+		Смена ориентации...''')
+		sleep(0.6)
+		msg.edit(f'''
+		Смена ориентации.''')
+		sleep(0.6)
+		msg.edit(f'''
+		Смена ориентации..''')
+		sleep(0.6)
+		msg.edit(f'''
+		Смена ориентации...''')
+		sleep(0.6)
+		msg.edit(f'''
+		Подождите немного.''')
+		sleep(0.6)
+		msg.edit(f'''
+		Подождите немного..''')
+		sleep(0.6)
+		msg.edit(f'''
+		Подождите немного...''')
+		sleep(0.6)
+		msg.edit(f'''
+		Подождите немного.''')
+		sleep(0.6)
+		msg.edit(f'''
+		Подождите немного..''')
+		sleep(0.6)
+		msg.edit(f'''
+		Подождите немного...''')
+		sleep(0.6)
+		msg.edit(f'''
+		Загрузка почти завершена.''')
+		sleep(0.6)
+		msg.edit(f'''
+		Загрузка почти завершена..''')
+		sleep(0.6)
+		msg.edit(f'''
+		Загрузка почти завершена...''')
+		sleep(0.6)
+		msg.edit(f'''
+		Загрузка почти завершена.''')
+		sleep(0.6)
+		msg.edit(f'''
+		Загрузка почти завершена..''')
+		sleep(0.6)
+		msg.edit(f'''
+		Загрузка почти завершена...''')
+		sleep(1)
+		msg.edit(f'''
+		Поздравляем! Загрузка успешно завершена! ''')
+		sleep(1)
+		msg.edit(f'''
+		Теперь ты 100% натурал! ''')
+
+	sleep(5)
+	global number
+	number = number + 1
 
 @app.on_message(filters.command("bogdan", prefixes=".") & filters.me)
 def betaloves(_, msg):
