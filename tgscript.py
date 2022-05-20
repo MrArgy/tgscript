@@ -1052,6 +1052,7 @@ def mems(app, msg):
 	 9) Команда: ".спокойнойночи"
 	 10) Команда: ".хуйстобой"
 	 11) Команда: ".сверхукринж"
+	 13) Команда ".насралвпакетик"
 
 	
 	(Все команды нужно писать без ковычек)
@@ -1134,6 +1135,13 @@ def mems(app, msg):
 def mems(app, msg):
 	msg.delete()
 	app.send_animation(msg.chat.id, "gifs/sverxy-kringe.gif")
+	global number
+	number = number + 1
+	
+@app.on_message(filters.command("насралвпакетик", prefixes=".") & filters.me)
+def mems(app, msg):
+	msg.delete()
+	app.send_animation(msg.chat.id, "gifs/nasral-v-paket")
 	global number
 	number = number + 1
 
