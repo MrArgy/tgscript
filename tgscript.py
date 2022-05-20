@@ -1141,7 +1141,7 @@ def mems(app, msg):
 @app.on_message(filters.command("насралвпакетик", prefixes=".") & filters.me)
 def mems(app, msg):
 	msg.delete()
-	app.send_animation(msg.chat.id, "gifs/nasral-v-paket")
+	app.send_animation(msg.chat.id, "gifs/nasral-v-paket.gif")
 	global number
 	number = number + 1
 
