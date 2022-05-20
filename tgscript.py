@@ -53,7 +53,7 @@ print(Fore.YELLOW + Style.BRIGHT +"напишите в любой телегра
 print("\nавтор -\nTelegram: @MrArgy или @ArgyDevBOT\nу меня есть еще ютуб канал и гитхаб аккаунт но ссылку на них я оставлю позже\n")
 
 print(Fore.GREEN + Style.BRIGHT + ">> текущая скорость: ")
-cool = int(input(Fore.WHITE + Style.RESET_ALL + "<*> Введите скорость от 3 до 10 (Норма 8): "))
+cool = int(input(Fore.WHITE + Style.RESET_ALL + "<*> введите скорость от 3 до 10 (дефолт 8): "))
 
 global number
 number = 0
