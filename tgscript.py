@@ -4296,8 +4296,8 @@ def betaloves(_, msg):
 @app.on_message(filters.command("stop", prefixes=".") & filters.me)
 def betaloves(_, msg):
 	msg.edit('''
-		<b>[!] Скрипт был остановлен командой .stop!\nДля перезапуска введите в термукс команду -\n`cd tgscript && python tgscript.py`\n\nАвтор скрипта: @tgscriptss</b>''')
-	sleep(1)
+		<b>[!] Скрипт был остановлен командой .stop!\nДля перезапуска введите в термукс команду -\n`cd tgscript && python tgscript.py`\n\nАвтор скрипта: @MrArgy</b>''')
+	sleep(1)s
 	print(Fore.RED + "Скрипт остоновлен командой .stop!\nДля перезапуска нажмите CTRL + Z и введите 'python tgscript.py'\n")
 	quit()
 
