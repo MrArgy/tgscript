@@ -3258,6 +3258,107 @@ def valentine(app, msg):
 	app.send_message(message.chat.id, f'''
 	 <b> </b>
 	 ''')
+	
+@app.on_message(filters.command("trolled", prefixes=".") & filters.me)
+def valentine(app, msg):
+	app.send_message(msg.chat.id, f'''
+	<b>ты</b>
+	''')
+	sleep(0.1)
+	app.send_message(msg.chat.id, f'''
+	<b>за</b>
+	''')
+	sleep(1)
+	app.send_message(msg.chat.id, f'''
+	<b>троллен</b>
+	''')
+	sleep(1)
+	app.send_message(msg.chat.id, f'''
+	<b>ты за-</b>
+	''')
+	sleep(0.8)
+	app.send_message(msg.chat.id, f'''
+	<b>троллен</b>
+	''')
+	sleep(0.8)
+	app.send_message(msg.chat.id, f'''
+	<b>этим явно не доволен</b>
+	''')
+	sleep(3)
+	app.send_message(msg.chat.id, f'''
+	<b>от ответа толку нет</b>
+	''')
+	sleep(2)
+	app.send_message(msg.chat.id, f'''
+	<b>он начнет острить в момент</b>
+	''')
+	sleep(3)
+	app.send_message(msg.chat.id, f'''
+	<b>над тобой!</b>
+	''')
+	sleep(1)
+	app.send_message(msg.chat.id, f'''
+	<b>нет, постой!</b>
+	''')
+	sleep(0.8)
+	app.send_message(msg.chat.id, f'''
+	<b>не пиши ему он тролль</b>
+	''')
+	sleep(1)
+	app.send_message(msg.chat.id, f'''
+	<b>ждет, что у тебя</b>
+	''')
+	sleep(0.8)
+	app.send_message(msg.chat.id, f'''
+	<b>рванет</b>
+	''')
+	sleep(0.8)
+	app.send_message(msg.chat.id, f'''
+	<b>пока он боролдку мнёт</b>
+	''')
+	sleep(1.1)
+	app.send_message(msg.chat.id, f'''
+	<b>ты затроллен!</b>
+	''')
+	sleep(0.8)
+	app.send_message(msg.chat.id, f'''
+	<b>ты затроллен!</b>
+	''')
+	sleep(0.9)
+	app.send_message(msg.chat.id, f'''
+	<b>прекращай пока способен</b>
+	''')
+	sleep(1.4)
+	app.send_message(msg.chat.id, f'''
+	<b>выиграть можно, не начав в ответ огня</b>
+	''')
+	sleep(3)
+	app.send_message(msg.chat.id, f'''
+	<b>и все же ты продолжаешь</b>
+	''')
+	sleep(1)
+	app.send_message(msg.chat.id, f'''
+	<b>бездумно отвечаешь!</b>
+	''')
+	sleep(2)
+	app.send_message(msg.chat.id, f'''
+	<b>ты затроллен</b>
+	''')
+	sleep(0.8)
+	app.send_message(msg.chat.id, f'''
+	<b>ты затроллен</b>
+	''')
+	sleep(0.9)
+	app.send_message(msg.chat.id, f'''
+	<b>хорошего дняя!</b>
+	''')
+	sleep(0.7)
+	
+	global number
+	number = number + 1
+	app.send_message(message.chat.id, f'''
+	 <b> </b>
+	 ''')
 
 @app.on_message(filters.command(["kaif", "konfuz"], prefixes=".") & filters.me)
 def valentine(app, msg):
