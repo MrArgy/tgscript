@@ -652,6 +652,19 @@ async def kviks(client, message):
 	await message.edit(str(text2))
 	await asyncio.sleep(5.0)
 	
+@app.on_message(filters.command("сhangle", prefixes=".") & filters.me)
+async def changle(client, message):
+	global number
+	number = number + 1
+	vopross = ['гей?', 'безмамный?', 'хуесос?', 'девственник?', 'ебал собак?', 'имеет отчимов?', 'клоун?', 'негр?', 'пидорас?', 'трап?', 'транс?']
+	changle = [f'📗 Конечно!',f'📘 Немного некоретный ответ.',f'📕 Нет.',f'📖 Сейчас ваш выбор!']
+	text = f"Чангл {random.choice(vopross)}"
+	await message.edit(str(text))
+	await asyncio.sleep(3.0)
+	text2 = random.choice(changle)
+	await message.edit(str(text2))
+	await asyncio.sleep(5.0)
+	
 @app.on_message(filters.command("bombachat", prefixes=".") & filters.me)
 async def bombachat(client, message):
 	global number
